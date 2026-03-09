@@ -47,7 +47,7 @@ const SongCard = ({ song, onSelectSong }) => {
       </div>
 
       <button className="heart-btn" onClick={handleToggleFavourite}>
-        {isFavourite ? "💖" : "🤍"}
+        {isFavourite ? "💚" : "🤍"}
       </button>
     </div>
   );
