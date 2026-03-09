@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================
+   Base
+========================= */
+@layer base {
+  * {
+    @apply m-0;
+  }
+
+  body {
+    @apply font-sans bg-gradient-to-br from-gray-900 via-black to-gray-900;
+  }
+}
+
+/* =========================
+   Components
+========================= */
+@layer components {
+  /* Icon Button */
+  .btn-icon {
+    @apply bg-transparent border-none cursor-pointer p-2 inline-flex 
+           items-center justify-center rounded-full 
+           transition-all duration-200 
+           hover:bg-white/10 active:scale-95;
+  }
+
+  /* PRIMARY BUTTON – Spotify Green */
+  .btn-primary {
+    @apply text-white font-semibold 
+           px-6 py-3 rounded-full transition-all duration-300 
+           active:scale-95 border-none cursor-pointer;
+    background: linear-gradient(to right, #1db954, #1ed760);
+    box-shadow: 0 0 20px rgba(29, 185, 84, 0.4);
+  }
+
+  .btn-primary:hover {
+    background: linear-gradient(to right, #169c46, #1db954);
+    box-shadow: 0 0 30px rgba(29, 185, 84, 0.6);
+  }
+
+  /* Secondary Button */
+  .btn-secondary {
+    @apply bg-white/10 text-white font-semibold px-6 py-3 rounded-full 
+           transition-all duration-300 hover:bg-white/20
+           active:scale-95 border-none cursor-pointer backdrop-blur-sm;
+  }
+
+  /* Glass Card */
+  .card-glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl 
+           transition-all duration-300 hover:bg-white/10 hover:border-white/20
+           hover:-translate-y-1;
+  }
+
+  .card-glass:hover {
+    box-shadow: 0 0 25px rgba(29, 185, 84, 0.2);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .card-hover:hover {
+    @apply -translate-y-1;
+    box-shadow: 0 0 30px rgba(29, 185, 84, 0.3);
+  }
+
+  /* Modern Input */
+  .input-modern {
+    @apply bg-white/5 border border-white/10 rounded-xl px-4 py-3 
+           text-white placeholder-gray-400 transition-all duration-300
+           focus:outline-none focus:border-green-500 focus:bg-white/10;
+    box-shadow: none;
+  }
+
+  .input-modern:focus {
+    box-shadow: 0 0 20px rgba(29, 185, 84, 0.3);
+  }
+
+  /* Gradient Text */
+  .text-gradient {
+    @apply bg-gradient-to-r from-green-400 via-green-400 to-green-400 
+           bg-clip-text text-transparent;
+  }
+
+  /* Animated Background */
+  .bg-animated-gradient {
+    @apply bg-gradient-to-br from-green-600/20 via-green-600/20 to-green-600/20;
+    animation: gradientShift 8s ease infinite;
+    background-size: 200% 200%;
+  }
+}
+
+/* =========================
+   Utilities
+========================= */
+@layer utilities {
+  .glow-green {
+    box-shadow: 0 0 25px rgba(29, 185, 84, 0.5);
+  }
+
+  .backdrop-blur-glass {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+}
+
+/* =========================
+   Scrollbars
+========================= */
+.scrollbar-modern::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.scrollbar-modern::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-modern::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+}
+
+.scrollbar-modern::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Thin Scrollbar - GREEN */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(29, 185, 84, 0.3);
+  border-radius: 9999px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: rgba(29, 185, 84, 0.6);
+}
+
+/* Hide Scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* =========================
+   Animations
+========================= */
+@keyframes gradientShift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Animation utilities */
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+.animate-slide-in {
+  animation: slideIn 0.5s ease-out;
+}
+.animate-pulse-slow {
+  animation: pulse 3s ease-in-out infinite;
+}
