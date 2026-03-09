@@ -1,10 +1,10 @@
 🐍🎧 SYNTHESIA – MERN Music Player
 
-A full-stack music streaming web application built with the MERN Stack (MongoDB, Express, React, Node.js) that allows users to discover, search, and play music seamlessly.
+    A full-stack music streaming web application built with the MERN Stack (MongoDB, Express, React, Node.js) that allows users to discover, search, and play music seamlessly.
 
-The platform integrates Jamendo API for music streaming, ImageKit for image storage, and Mailtrap for email testing, providing a complete real-world web application architecture.
+    The platform integrates Jamendo API for music streaming, ImageKit for image storage, and Mailtrap for email testing, providing a complete real-world web application architecture.
 
-The UI is inspired by the Slytherin aesthetic, giving the music player a dark, immersive, and stylish interface.
+    The UI is inspired by the Slytherin aesthetic, giving the music player a dark, immersive, and stylish interface.
 
 # 🚀 Tech Stack
 
@@ -26,58 +26,59 @@ SYNTHESIA is a modern web music player designed to demonstrate the power of full
 
 The application allows users to:
 
-Stream music
+-Stream music
 
-Search for tracks
+-Search for tracks
 
-Manage favorite songs
+-Manage favorite songs
 
-Control playback
+-Control playback
 
-Interact with a secure authentication system
+-Interact with a secure authentication system
 
 Music data is fetched dynamically from the Jamendo API, while backend services manage user accounts, favorites, and authentication workflows.
 
-✨ Features
+✨ FEATURES
+
 🎧 Music Streaming
 
-Users can stream songs directly within the application using tracks fetched from the Jamendo API.
+     Users can stream songs directly within the application using tracks fetched from the Jamendo API.
 
 🔍 Smart Search
 
-Users can search for songs using keywords, and the system instantly displays relevant available tracks.
+    Users can search for songs using keywords, and the system instantly displays relevant available tracks.
 
 ❤️ Favorite Songs System
 
-Users can like and unlike songs, allowing them to build a personal collection of favorite music.
+    Users can like and unlike songs, allowing them to build a personal collection of favorite music.
 
 ⭐ Favorites Section
 
-A dedicated Favorites page displays all songs the user has liked.
+    A dedicated Favorites page displays all songs the user has liked.
 
 🔊 Advanced Music Controls
 
 The player includes several playback controls:
 
-Play / Pause
+-Play / Pause
 
-Skip tracks
+-Skip tracks,Shuffle/play in loop
 
-Adjust volume
+-Adjust volume
 
-Increase or decrease playback speed
+-Increase or decrease playback speed
 
 🔐 User Authentication
 
 The system includes a full authentication flow:
 
-User Signup
+-User Signup
 
-User Login
+-User Login
 
-Forgot Password
+-Forgot Password
 
-Reset Password
+-Reset Password
 
 Email functionality is tested using Mailtrap.
 
@@ -85,11 +86,11 @@ Email functionality is tested using Mailtrap.
 
 The UI design is inspired by the Slytherin theme, featuring:
 
-Dark aesthetic
+-Dark aesthetic
 
-Modern layout
+-Modern layout
 
-Smooth UI interactions
+    -Smooth UI interactions
 
 🖼 Image Management
 
@@ -97,7 +98,7 @@ Album artwork and images are efficiently handled using ImageKit, ensuring fast i
 
 🧪 API Testing
 
-All backend endpoints were tested and validated using Postman.
+    All backend endpoints were tested and validated using Postman.
 
 📸 Screenshots
 
@@ -107,13 +108,16 @@ All backend endpoints were tested and validated using Postman.
 ![SEARCH](IMAGES/SEARCH.png)
 🔍 Song Search
 
-![LOGIN](IMAGES/LOGIN.png)![SIGNUP](IMAGES/SIGNUP.png)
-🎵 Music Player
+![LOGIN](IMAGES/LOGIN.png)
+
+![SIGNUP](IMAGES/SIGNUP.png)
+👤Authentication
 
 ![FAV](IMAGES/FAV.png)
 💚 Favorite Songs
 
 📂 Project Structure
+
 SYNTHESIA
 │
 ├── client
@@ -165,9 +169,9 @@ Music sharing features
 
 👩‍💻 Author
 
-Aashika R
+    Aashika R
 
-Full Stack Developer | MERN Stack | AI & ML Enthusiast
+    Full Stack Developer | MERN Stack | AI & ML Enthusiast
 
 ⭐ Support
 
